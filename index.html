@@ -35,6 +35,14 @@
 			font-size: 1.2em;
 			margin: 0.8em 0 0.1em 0;
 		}
+		ul, ol {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		li {
+			margin-top: 0.25em;
+			margin-bottom: 0.25em;
+		}
 		body {
 			min-height: 100vh;
 			background-color: whitesmoke;
@@ -92,15 +100,27 @@
 			display: inline-block;
 			margin: 0 -0.5em;
 		}
+		.ck_row, .cv_row {
+			margin: 0.25em 0.5em;
+		}
 		.ck_row {
+			border-top: none;
+			border-right: none;
+			border-bottom: solid hsla(0, 0%, 80%, 1) 1px;
+			border-left: none;
+		}
+		.ck_row > p {
+			display: inline;
+		}
+		.ck_row::after {
+			color: transparent;
+			content: "—" ;
+			display: inline;
 		}
 		.contact_value {
 			display: inline-block;
 		}
 		.cv_row {
-		}
-		.ck_row, .cv_row {
-			margin: 0.25em 0.5em;
 		}
 	</style>
 	</head>
@@ -112,7 +132,11 @@
 			<h1>Reid Gould</h1>
 			<p class="h1_sub">Software Solutions Architect with acumen in the Built Environment</p>
 			<h2>Downloads</h2>
-			<p><a href="/Reid%20Gould%20-%20Resume.pdf">Resume</a></p>
+			<ul>
+				<li><a href="/Reid%20Gould%20-%20Resume.pdf">Resume.pdf</a></li>
+				<li><a href="/Wide%20Field%20Realities%20-%20VR%20Pack.zip">Wide Field Realities - VR Pack.zip</a></li>
+				<li><a href="/AEC%20Hackathon%20-%20Project%20Knockout.mp4">AEC Hackathon - Project Knockout.mp4</a></li>
+			</ul>
 			<h2>Contact</h2>
 			<div class="contact">
 				<div class="contact_key">
