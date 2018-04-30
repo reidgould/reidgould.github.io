@@ -52,6 +52,7 @@
 		}
 		.banner{
 			width: 100%;
+			min-height: 10em;
 			padding: 3em 0 0 0;
 			background-color: steelblue;
 			background-image: url('flourescent-large-2x.jpg');
@@ -64,11 +65,15 @@
 			height: 8rem;
 			margin-right: auto;
 			margin-left: auto;
-			transform: translateY(50%);
+			position: absolute;
+			top: -4.5em;
+			left: 2.5em;
+			/*transform: translateY(50%);*/
 			border-radius: 50%;
 			border: solid 4px white;
 		}
 		.content {
+			position: relative;
 			background-color: white;
 			margin-left: auto;
 			margin-right: auto;
@@ -126,9 +131,9 @@
 	</head>
 	<body>
 		<div class="banner shadow_banner">
-			<img src="profile_edit.jpg" class="portrait shadow_portrait">
 		</div>
 		<div class="content shadow_content">
+			<img src="profile_edit.jpg" class="portrait shadow_portrait">
 			<h1>Reid Gould</h1>
 			<p class="h1_sub">Software Solutions Architect with acumen in the Built Environment</p>
 			<h2>Downloads</h2>
